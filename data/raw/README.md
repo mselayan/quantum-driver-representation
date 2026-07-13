@@ -1,4 +1,4 @@
-# Getting the data
+# Getting the Data
 
 The I-24 MOTION dataset is **not distributed with this repository**. It is
 released by Vanderbilt under a data use agreement and must be downloaded from the
