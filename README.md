@@ -1,4 +1,4 @@
-# Quantum-inspired modeling of driver behavioral heterogeneity
+# Quantum-Inspired Modeling of Driving Behavior
 
 Code for the paper. Drivers are modeled as density matrices over a random Fourier
 feature space. A small number of behavioral profiles, each a density matrix, are
