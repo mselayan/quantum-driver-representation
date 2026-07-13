@@ -5,6 +5,12 @@ feature space. A small number of behavioral profiles, each a density matrix, are
 mixed according to the traffic context, and each driver's state evolves by
 blending toward that mixture and then updating on what the driver actually did.
 
+<p align="center">
+  <img src="figures/method_flow.png" width="1000">
+  <br>
+  <em>Training pipeline.</em>
+</p>
+
 Data: I-24 MOTION, westbound, the full recording.
 
 ## Model
