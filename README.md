@@ -8,10 +8,8 @@ blending toward that mixture and then updating on what the driver actually did.
 <p align="center">
   <img src="figures/method_flow.png" width="1000">
   <br>
-  <em>Training pipeline.</em>
+  <em>Estimation pipeline of the quantum-inspired driver behavioral profiling framework.</em>
 </p>
-
-Data: I-24 MOTION, westbound, the full recording.
 
 ## Model
 
