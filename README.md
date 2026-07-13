@@ -174,22 +174,6 @@ so on a cluster run them as a job array. On a single machine, run them
 sequentially, or use `--limit-egos` to score a subset. The index is always built
 from the full set of vehicles regardless.
 
-## Two things worth knowing
-
-**Egos are filtered, neighbors are not.** A trajectory is scored as an ego only
-if its class is in `HDV_CLASSES` and it was tracked for at least 10 s. The
-spacetime index that leaders and neighbors are drawn from contains *every*
-westbound vehicle, of every class and every duration. A truck that appears for
-three seconds still blocks the driver behind it, so it still contributes to that
-driver's headway and density. It just never gets a row of its own.
-
-**The neighbor search radius truncates the largest perception zone.**
-`MAX_SEARCH_RADIUS` is 520 ft. The Tesla "Narrow Fwd" zone extends to 250 m, or
-820 ft. Neighbors between 520 and 820 ft ahead therefore do not contribute to
-`sp_entropy`. This is the configuration the paper's results were produced with
-and it is left as is. It is a truncation, not a bug, but it should be stated
-rather than discovered.
-
 ## Reproducing
 
 Seed is 702 throughout. `K=3`, `D=100`, `rank=10`, `alpha=0.2`, `eta=0.1`,
