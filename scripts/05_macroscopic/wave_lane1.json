@@ -1,0 +1,46 @@
+{
+  "_comment": [
+    "Geometry of one stop-and-go wave in lane 1, read off the time-space",
+    "diagram from scripts/05_macroscopic/build_xt_diagrams.py.",
+    "",
+    "t_offset is subtracted from the UTC timestamps so the wave and platoon",
+    "points below can be written as readable seconds-into-the-recording.",
+    "1669120000.0 is 2022-11-22 06:26:40 Central, i.e. 27 minutes into the",
+    "06:00 recording. The platoon below spans 06:27:09 to 06:29:44 Central.",
+    "",
+    "wave: two points on the wave front. Their slope is the wave speed, which",
+    "sets the slant of one edge of every parallelogram.",
+    "",
+    "platoon: successive points along ONE platoon's path through the wave, in",
+    "order. Each becomes a parallelogram whose other edge follows the local",
+    "vehicle trajectory. Aggregating Edie's quantities over these slanted",
+    "regions rather than rectangles is what makes the hysteresis loop resolve.",
+    "",
+    "half_space_veh: half-extent of each parallelogram along the vehicle",
+    "direction, in feet. half_time_wave: half-extent along the wave direction,",
+    "in seconds. Together they set how much data each point averages over."
+  ],
+
+  "lane": 1,
+  "t_offset": 1669120000.0,
+
+  "wave": {
+    "t1": 86.0,  "x1": 318700.0,
+    "t2": 133.0, "x2": 318150.0
+  },
+
+  "platoon": [
+    {"label": "Free flow",     "t":  29.4, "x": 322880.0},
+    {"label": "Free flow",     "t":  49.5, "x": 321050.0},
+    {"label": "Decelerating",  "t":  60.6, "x": 319995.0},
+    {"label": "Decelerating",  "t":  72.7, "x": 319363.0},
+    {"label": "Entering wave", "t":  88.4, "x": 318917.0},
+    {"label": "Inside wave",   "t": 115.2, "x": 318382.0},
+    {"label": "Inside wave",   "t": 140.4, "x": 317860.0},
+    {"label": "Exiting wave",  "t": 156.6, "x": 317375.0},
+    {"label": "Recovered",     "t": 184.8, "x": 315503.0}
+  ],
+
+  "half_space_veh": 300.0,
+  "half_time_wave": 5.0
+}
