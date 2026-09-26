@@ -5,8 +5,7 @@ Reproducible code and data for the paper
 > **Quantum-Inspired Modeling of Driving Behavior** (Preprint)\
 > Mohammad Elayan¹, Omid Armantalab¹, Wissam Kontar¹\
 > ¹ Civil and Environmental Engineering, University of Nebraska–Lincoln\
-> arXiv:2608.25907 (2026).\
-> [https://arxiv.org/abs/2608.25907](https://arxiv.org/abs/2608.25907) ·
+> arXiv:2608.25907 (2026). [https://arxiv.org/abs/2608.25907](https://arxiv.org/abs/2608.25907) ·
 
 Drivers are modeled as density matrices over a random Fourier
 feature space. A small number of behavioral profiles, each a density matrix, are
