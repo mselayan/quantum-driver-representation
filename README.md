@@ -1,6 +1,14 @@
 # Quantum-Inspired Modeling of Driving Behavior
 
-Code for the paper. Drivers are modeled as density matrices over a random Fourier
+Reproducible code and data for the paper
+
+> **Quantum-Inspired Modeling of Driving Behavior** (Preprint)
+> Mohammad Elayan¹, Omid Armantalab¹, Wissam Kontar¹
+> ¹ Civil and Environmental Engineering, University of Nebraska–Lincoln
+> arXiv:2608.25907 (2026).
+> [https://arxiv.org/abs/2608.25907](https://arxiv.org/abs/2608.25907) ·
+
+Drivers are modeled as density matrices over a random Fourier
 feature space. A small number of behavioral profiles, each a density matrix, are
 mixed according to the traffic context, and each driver's state evolves by
 blending toward that mixture and then updating on what the driver actually did.
@@ -187,10 +195,22 @@ profile entropy.
 The RFF sampler and both scalers are pickled at training time and loaded by
 everything downstream. Nothing is ever refit after training.
 
-## Citation
+## Note
 
 If you use the I-24 MOTION data, the data use agreement requires:
 
 > Gloudemans, D., Wang, Y., Ji, J., Zachar, G., Barbour, W., Hall, E.,
 > Cebelak, M., Smith, L., and Work, D.B. (2023). I-24 MOTION: An instrument for
 > freeway traffic science. *Transportation Research Part C*, 155, 104311.
+
+## Citation
+
+```bibtex
+@article{elayan2026quantum,
+  title   = {Quantum-Inspired Modeling of Driving Behavior},
+  author  = {Elayan, Mohammad and Armantalab, Omid and Kontar, Wissam},
+  journal = {arXiv preprint arXiv:2608.25907},
+  year    = {2026},
+  doi     = {10.48550/arXiv.2608.25907}
+}
+```
